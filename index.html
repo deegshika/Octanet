@@ -1,253 +1,42 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <section class="flex">
-            <a href="#home" class="logo"><img src="logo.png" alt=""></a>
-            <nav class="navbar">
-                <a href="#home">home</a>
-                <a href="#about">about</a>
-                <a href="#menu">menu</a>
-                <a href="#gallery">gallery</a>
-                <a href="#team">team</a>
-                <a href="#contact">contact</a>
-            </nav>
-
-            <div id="menu-btn" class="fas fa-bars"></div>
-        </section>
-    </header>
-
-    <div class="home-bg">
-        <section class="home" id="home" >
-            <div class="content" style="margin-top: 160px">
-                <h3>Brew Café</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat quisquam dolorem, maiores inventore accusantium neque.</p>
-                <a href="#about" class="btn">about us</a>
+    <div class="container">
+        <header>
+            <h1>To-do List</h1>
+        </header>
+        <div class="todo-container">
+            <ul id="task-list">
+                <li class="task-item">
+                    <span>Go to Gym</span>
+                    <button class="delete-btn">&#128465;</button>
+                </li>
+                <li class="task-item completed">
+                    <span>Send wireframes</span>
+                    <button class="delete-btn">&#128465;</button>
+                </li>
+                <li class="task-item">
+                    <span>Learn Python</span>
+                    <button class="delete-btn">&#128465;</button>
+                </li>
+                <li class="task-item">
+                    <span>Complete Assignments</span>
+                    <button class="delete-btn">&#128465;</button>
+                </li>
+            </ul>
+            <div class="input-container">
+                <input type="text" id="task-input" placeholder="+ New task">
             </div>
-        </section>
-
+        </div>
     </div>
 
-    <section class="about" id="about" style="margin-top: 60px;">
-        <div class="image">
-            <img src="about1.jpg" alt="about_jpg" style="width: 400px;">
-        </div>
-        <div class="content" style="margin-top: -540px; margin-left: 600px;">
-            <h3>A cup of coffee can complete your day</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque earum numquam, error,suscipit a neque doloribus assumenda est recusandae aliquam architecto incidunt nihil totam omnis qui et magnam maxime quidem.</p>
-            <a href="#menu" class="btn">our menu</a>
-        </div>
-
-    </section>
-
-    <section class="facility" style="margin-top: 30px;">
-        <div class="heading">
-            <img src="" alt="">
-            <h3>our facility</h3>
-
-        </div>
-        <div class="box-container">
-            <div class="box">
-                <img src="image 1.png" alt="">
-                <h3>varieties of coffee</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, enim! </p>
-            </div>
-
-            <div class="box">
-                <img src="Group 2.png" alt="">
-                <h3>coffee beans</h3>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, pariatur.</p>
-            </div>
-
-            <div class="box">
-                <img src="Group 1.png" alt="">
-                <h3>breakfast and sweets</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, alias!</p>
-            </div>
-
-            <div class="box">
-                <img src="Group 3.png" alt="">
-                <h3>ready to go coffee</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, earum.</p>
-            </div>
-
-            
-        </div>
-    </section>
-
-
-
-
-    <section class="menu" id="menu" style="margin-top: 80px;">
-        <div class="heading">
-            <h3>special menu</h3>
-        </div>
-
-        <div class="box-container" style="padding: 10px;">
-            <div class="box">
-                <img src="menu 5.png" alt="">
-                <h3>cappucino</h3>
-            </div>
-
-            <div class="box">
-                <img src="menu 2.png" alt="">
-                <h3>Milk tea</h3>
-            </div>
-
-            <div class="box">
-                <img src="menu 3.png" alt="">
-                <h3>black coffee</h3>
-            </div>
-
-            <div class="box">
-                <img src="menu 4.png" alt="">
-                <h3>frappucino</h3>
-            </div>
-
-            <div class="box">
-                <img src="menu 1.png" alt="">
-                <h3>wifi coffee</h3>
-            </div>
-
-            <div class="box">
-                <img src="menu 6.png" alt="">
-                <h3>love coffee</h3>
-            </div>
-        </div> 
-
-    </section>
-
-    <div class="section gallery" id="gallery" style="margin-top: 120px;">
-        <div class="heading">
-            <h3>Our gallery</h3>
-        </div>
-
-        <div class="box-container">
-            <img src="gallery1.png" alt="">
-            <img src="gallery2.png" alt="">
-            <img src="galler3.png" alt="">
-            <img src="gallery4.png" alt="">
-            <img src="gallery5.png" alt="">
-            <img src="gallery6.png" alt="">
-        </div>
-
-    </div>
-
-    <section class="team" id="team" style="margin-top: 120px;">
-        <div class="heading">
-            <h3>our team</h3>
-        </div>
-        <div class="box-container">
-            <div class="box">
-                <img src="team5.png" alt="">
-                <h3>Leo Das</h3>
-            </div>
-
-            <div class="box">
-                <img src="team1.png" alt="">
-                <h3>Johhn Abraham</h3>
-            </div>
-
-            <div class="box">
-                <img src="team2.png" alt="">
-                <h3>Mary granza</h3>
-            </div>
-
-
-            <div class="box">
-                <img src="team3.png" alt="">
-                <h3>richard ferric</h3>
-            </div>
-
-            <div class="box">
-                <img src="team4.png" alt="">
-                <h3>riya gopal</h3>
-            </div>
-
-            <div class="box">
-                <img src="team6.png" alt="">
-                <h3>layoli dcruz</h3>
-            </div>
-        </div>
-
-
-        <section class="contact" id="contact" style="margin-top: 120px;">
-            <div class="contact-1" style="margin-left: -60px;">
-            <div class="heading">
-                <h3>contact us</h3>
-            </div>
-            <div class="row">
-
-                <div class="img">
-                    <img src="contact 2.png" alt="">
-                </div>
-                <form action="" method="post">
-                    <h3>book a table</h3>
-                    <input type="text" name="name" required class="box" maxlength="20" placeholder="enter your name">
-                    <input type="number" name="number" required class="box" maxlength="20" placeholder="enter your number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
-                    <input type="number" name="guests" required class="box" maxlength="20" placeholder="how many guests" min="0" max="99" onkeypress="if(this.value.length == 2) return false">
-                    <input type="submit" name="send" value="send message" class="btn">
-                </form>
-            </div>
-        </div>
-        </section>
-
-        <section class="footer">
-
-            <div class="box-container">
-
-                <div class="box">
-                    <i class="fas fa-envelope"></i>
-                    <h3>our email</h3>
-                    <p>mddeegshika@gmail.com</p>
-                    
-                    <p></p>
-                </div>
-
-                <div class="box">
-                    <i class="fas fa-clock"></i>
-                    <h3>opening hours</h3>
-                    <p>07:00am to 09:00pm</p>
-                    <p></p>
-                </div>
-
-                <div class="box">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>shop location</h3>
-                    <p>Coimbatore, india-641601</p>
-                    <p></p>
-                </div>
-
-                <div class="box">
-                    <i class="fas fa-phone"></i>
-                    <h3>our number</h3>
-                    <p>8890450577</p>
-                   
-                    <p></p>
-                </div>
-            </div>
-
-            <div class="credit" style="margin-top: 70px;">&copy; copyright @2024 by <span>Deegshika M web designer</span> | all rights reserved!</div>
-        </section>
-
-
-    </section>
-
-
-
-
-
-
-
-
-    <script src="js/script.js"></script>
+    <script src="scripts.js"></script>
 </body>
-</html>         
+</html>
